@@ -6,10 +6,6 @@ app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/vue.js', function(request, response) {
-  response.sendFile(path.join(__dirname, '../node_modules/vue/dist/vue.js'));
-});
-
 app.get('/plugin.ejs', function(request, response) {
   response.sendFile(path.join(__dirname, '../src/index.js'));
 });
